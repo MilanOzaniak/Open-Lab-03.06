@@ -6,7 +6,14 @@ namespace Open_Lab_03._06
     {
         public bool HasSpaces(string str)
         {
-            throw new NotImplementedException();
+            for (int i = 0; i < str.Length; i++)
+            {
+                if (str[i] == ' ')
+                {
+                    return true;
+                }
+            }
+            return false;
         }
     }
 }
